@@ -4,3 +4,4 @@ pandas_profiling==2.8.0
 streamlit_pandas_profiling==0.0.6
 Path==15.0.0
 matplotlib==3.3.2
+htbuilder==0.3.0
