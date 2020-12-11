@@ -47,7 +47,7 @@ if uploaded_file is not None:
         pr = ProfileReport(df, explorative=True)
     st_profile_report(pr)
     pr.to_file("output.html")
-    st.markdown(f'''<button type="button" class="btn btn-warning btn-lg btn-block">{get_binary_file_downloader_html('output.html', 'Informe')}</button>''', unsafe_allow_html=True)
+    st.sidebar.markdown(f'''<button type="button" class="btn btn-warning btn-lg btn-block">{get_binary_file_downloader_html('output.html', 'Informe')}</button>''', unsafe_allow_html=True)
 
 st.write('')
 st.write('')
