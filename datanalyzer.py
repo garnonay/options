@@ -24,8 +24,22 @@ def get_binary_file_downloader_html(bin_file, file_label='File'):
     href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}">Descarga {file_label}</a>'
     return href
 
+# def read_markdown_file(markdown_file):
+#     return Path(markdown_file).read_text()
+
 header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(img_to_bytes("GT data.png"))
 st.markdown(header_html, unsafe_allow_html=True)
+st.write('')
+st.write('')
+
+intro_markdown = f'''
+<details>
+    <summary>🔎 Info</summary>
+    Esta herramienta te permite realizar una exploración de datos sobre ficheros TXT, XLSX y CSV.
+    Simplemente selecciona el fichero que vas a cargar en el menú de la izquierda, el tipo de Informe y carga el fichero a través del menú de abajo! 👇
+</details>'''
+
+st.markdown(intro_markdown, unsafe_allow_html=True)
 st.write('')
 st.write('')
 
